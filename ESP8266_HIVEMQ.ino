@@ -1,6 +1,9 @@
 
     #include <ESP8266WiFi.h>
     #include <PubSubClient.h>
+    #include <Adafruit_ADS1015.h>
+    #include <Wire.h>
+
     #define wifi_ssid "TNCAP7B297F"
     #define wifi_password "4AF8E22F53"
     #define mqtt_server "192.168.1.69"
@@ -54,7 +57,7 @@
         Serial.println(String(topic_val).c_str());
         client.publish(topic.c_str(), String(topic_val).c_str(), true);
      }
- //   } 
+ //   }
     //Variables used in loop()
     long lastMsg = 0;
     float t1 = 75.5;
