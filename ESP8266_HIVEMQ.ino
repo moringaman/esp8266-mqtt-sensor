@@ -7,8 +7,8 @@
     #define wifi_ssid "TNCAP7B297F"
     #define wifi_password "4AF8E22F53"
     #define mqtt_server "192.168.1.69"
-    #define mqtt_user "Boxer1"
-    #define mqtt_password "Malachi01"
+    #define mqtt_user "xxxxxx"
+    #define mqtt_password "xxxxxxxx"
     #define topic1 "t1"
     #define topic2 "t2"
     WiFiClient espClient;
@@ -51,17 +51,18 @@
         }
     }
     //NOTE: if a user/password is used for MQTT connection use:
-//   if (client.connect("TestMQTT", mqtt_user, mqtt_password)) {
+   if (client.connect("TestMQTT", mqtt_user, mqtt_password)) {
     void pubMQTT(String topic,float topic_val){
         Serial.print("Newest topic " + topic + " value:");
         Serial.println(String(topic_val).c_str());
         client.publish(topic.c_str(), String(topic_val).c_str(), true);
      }
- //   }
+   }
     //Variables used in loop()
     long lastMsg = 0;
     float t1 = 75.5;
     float t2 = 50.5;
+
     void loop() {
       if (!client.connected()) {
         reconnect();
