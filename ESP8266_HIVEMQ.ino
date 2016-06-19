@@ -2,10 +2,10 @@
     #include <ESP8266WiFi.h>
     #include <PubSubClient.h>
     #define wifi_ssid "TNCAP7B297F"
-    #define wifi_password "4AF8E22F53"
+    #define wifi_password "xxxxxxxx"
     #define mqtt_server "192.168.1.69"
-    #define mqtt_user "Boxer1"
-    #define mqtt_password "Malachi01"
+    #define mqtt_user "xxxxxxxx"
+    #define mqtt_password "xxxxxxxxx"
     #define topic1 "t1"
     #define topic2 "t2"
     WiFiClient espClient;
