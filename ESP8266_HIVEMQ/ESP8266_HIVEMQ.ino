@@ -5,10 +5,10 @@
 #include <ArduinoJson.h>
 
 #define wifi_ssid "TNCAP7B297F"
-#define wifi_password "4AF8E22F53"
+#define wifi_password "XXXXXXXXX"
 #define mqtt_server "192.168.1.69"
 #define mqtt_user "hass"
-#define mqtt_password "hasspass"
+#define mqtt_password "XXXXXXXX"
 #define script_name "MQTT_ESP8266"
 #define script_version "1.0.0"
 //Set topic to device id that client will subscribe to
